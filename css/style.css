@@ -214,7 +214,7 @@ nav li{
     bottom: -30px;
     width: 80%;
     height: 80%;
-    background-image: url(/images/dots.png);
+    background-image: url(../images/dots.png);
     z-index: -1;
 }
 
