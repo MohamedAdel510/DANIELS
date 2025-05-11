@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media-query.css">
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar-example">
     
     <header id="home" class="vh-100 d-flex flex-wrap justify-content-center align-items-center align-content-center ">
 
@@ -21,28 +21,28 @@
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto py-2 mb-lg-0 nav-menu ">
-                  <li class="nav-item mx-lg-3">
-                    <a class="nav-link p-lg-0 active " aria-current="page" href="#">Home</a>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent" id="navbar-example">
+                <ul class="navbar-nav ms-auto py-2 mb-lg-0 nav-menu " role="tablist">
+                  <li class="nav-item mx-lg-3 ">
+                    <a class="nav-link p-lg-0 active " aria-current="page" href="#home">Home</a>
                   </li>
-                  <li class="nav-item mx-lg-3">
-                    <a class="nav-link p-lg-0 " href="#about">About</a>
+                  <li class="nav-item mx-lg-3 ">
+                    <a class="nav-link p-lg-0   " href="#about">About</a>
                   </li>
-                  <li class="nav-item mx-lg-3">
-                    <a class="nav-link p-lg-0 " href="#services">Services</a>
+                  <li class="nav-item mx-lg-3 ">
+                    <a class="nav-link p-lg-0   " href="#services">Services</a>
                   </li>
-                  <li class="nav-item mx-lg-3">
-                    <a class="nav-link p-lg-0" href="#work">Works</a>
+                  <li class="nav-item mx-lg-3 ">
+                    <a class="nav-link p-lg-0  " href="#work">Works</a>
                   </li>
-                  <li class="nav-item mx-lg-3">
-                    <a class="nav-link p-lg-0" href="#clients">Clients</a>
+                  <li class="nav-item mx-lg-3 ">
+                    <a class="nav-link p-lg-0  " href="#client">Clients</a>
                   </li>
-                  <li class="nav-item mx-lg-3">
-                    <a class="nav-link p-lg-0" href="#team">Team</a>
+                  <li class="nav-item mx-lg-3 ">
+                    <a class="nav-link p-lg-0  " href="#team">Team</a>
                   </li>
-                  <li class="nav-item mx-3">
-                    <a class="nav-link p-lg-0" href="#contant">Contact</a>
+                  <li class="nav-item mx-lg-3 ">
+                    <a class="nav-link p-lg-0  " href="#contant">Contact</a>
                   </li>
 
   
@@ -746,7 +746,7 @@
     </section>
 
 
-    <section id="team" class="py-5">
+    <section id="team" class="py-5 bg-body-tertiary">
       <div class="container">
         <div class="row g-4">
           <div class="col-12">
@@ -878,7 +878,7 @@
 
     <section id="contact" class="py-5">
       <div class="container">
-        <div class="row">
+        <div class="row g-4">
           <div class="col-12">
             <div class="section-tittle text-center">
               <h2>Contact Us.</h2>
@@ -915,11 +915,29 @@
             </div>
           </div>
 
-          
+          <div class="col-12 ">
+            <div class="row">
+              <div class="mb-3 col-lg-6">
+                <input type="email" class="form-control border-0 bg-body-tertiary" id="exampleFormControlInput1" placeholder="Name">
+              </div>
+              <div class="mb-3 col-lg-6">
+                <input type="email" class="form-control border-0 bg-body-tertiary" id="exampleFormControlInput1" placeholder="Email">
+              </div>
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control border-0 bg-body-tertiary" id="exampleFormControlTextarea1" placeholder="Mesage" rows="5"></textarea>
+            </div>
+            <button type="button" class="btn btn-dark px-5 mt-2">Submit</button>
+          </div>
 
         </div>
       </div>
     </section>
+
+
+    <footer class="bg-dark py-5 text-center">
+        <p class="text-secondary">Copy Right 2025 © By Mohmaed Adel All Rights Reserved</p>
+    </footer>
         
 
               <!-- Modals -->

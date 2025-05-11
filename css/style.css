@@ -117,7 +117,10 @@ nav {
 }
 
 
-
+nav li{
+    width: fit-content;
+    margin: auto;
+}
 
 
 .icon{
@@ -148,26 +151,36 @@ nav {
     text-align: center;
     font-size: 14px;
     margin: 5px 0px;
+    padding-bottom: 0;
+    
 }
 
 .nav-item{
     position: relative;
 }
 
-/* .nav-item::before{  //////////// scrol spay ///////////
+.nav-link::before{
     content: '';
     position: absolute;
-
     left: 0;
     top: 100%;
-
     width: 0%;
     height: 2px;
-    background-color: white;
-} */
+    background-color: black;
+    transition: width .5s ;
+    -webkit-transition: width .5s ;
+    -moz-transition: width .5s ;
+    -ms-transition: width .5s ;
+    -o-transition: width .5s ;
+}
+
 
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
     color: black;
+}
+
+.nav-item .nav-link.active::before{
+    width: 100%;
 }
 
 
@@ -553,4 +566,10 @@ nav {
 .contact-icon:hover{
     background-color: #1C1C1C;
     color: white;
+}
+
+
+
+.form-control:focus{
+    box-shadow: 0 0 0 transparent;
 }

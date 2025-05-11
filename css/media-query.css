@@ -22,6 +22,10 @@
     .nav-link:focus, .nav-link:hover {
         color: white;
     }
+
+    .nav-link::before{
+      background-color: white;
+    }
 }
 
 
