@@ -351,7 +351,7 @@ nav li{
 
 .work-photo-layer{
     position: absolute;
-    top: 5px;
+    top: 10px;
     left: 5px;
     right: 5px;
     bottom: 0;
@@ -435,6 +435,7 @@ nav li{
 
 #work figure:hover .work-photo-layer{
     opacity: 1;
+    top: 5px;
     bottom: 5px;
 }
 
@@ -578,7 +579,7 @@ nav li{
     -o-transition: all .5s;
 }
 
-.contact-icon:hover{
+.contact-card:hover .contact-icon{
     background-color: #1C1C1C;
     color: white;
 }
